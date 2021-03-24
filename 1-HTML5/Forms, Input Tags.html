@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Forms And Input Tags </title>
+    <title> Admission Form </title>
     <style>
         .bg{
             background-image: url(pexels-tirachard-kumtanom-733857.jpg);
@@ -16,80 +16,82 @@
         body,html{
             height: 100%;
         }
-        #h1{
-                margin: -8px;
-    padding-left: 10px;
-    padding-bottom: 18px;
-    font-size: 195%;
-    color: blueviolet;
-    border: 3px solid black;
-    border-radius: 10px;
-    
+        #h1
+        {
+        width: 16.8%;
+        margin: -7px;
+        margin-left: 48%;
+        padding-left: 5px;
+        padding-bottom: -11px;
+        font-size: 195%;
+        color:black;
+        border: 3px solid black;
+        border-radius: 10px;
+        background-color: darkgrey;
         }
-        .container{
-            padding-left: 48%;
+        .container
+        {
+        padding-left: 48%;
+        padding-top: 30px;
         }
-
+        #Button
+        {
+        font-weight: bold;
+        width: 20%;
+        margin: 5px;
+        margin-left: 0%;
+        padding-left: 5px;
+        padding-bottom: 0px;
+        font-size: 80%;
+        border: 2px solid black;
+        color: black;
+        background-color: darkgrey;
+        border-radius: 8px;
+        }
+        #Button:hover
+        {
+        background-color: gray;
+        }
+        #name
+        {
+        font-weight: bold;
+        color: aqua;
+        }
+        
     </style>
 </head>
 
 <body>
     <div class="bg">
-        <div class="container">
     <h1 id="h1"> Admission Form </h1>
+    <div class="container">
     <form action="backend.php"> 
-        
-        <div> 
-            Name : <input type="text" name=" My Name " id = " name " >
-        </div>
-        <br>
-        <div> 
-            R. No : <input type="text">
-        </div>
-        <br>
         <div>
-            Deptt : <input type="text">
+            First Name : <br><input type="text" name=" My Name "><br>
+
+            Last Name : <br><input type="text" name=" My Name "><br>
+
+            D.O.B : <br><input type="text" name=" My Name "><br>
+
+            CNIC No : <br><input type="text" name=" My Name "><br>
+
+            Father's Name : <br><input type="text" name=" My Name "><br>
+
+            Email ID : <br><input type="text" name=" My Name "><br>
+
+            Grade : <br><input type="text" name=" My Name "><br><br>
+
+            80% Required <br><br>
+
+            Check If Eligible : <input type="checkbox"><br><br>
+
+            Last Attended School/College : <br><input type="text" name=" My Name "><br>
+
+            Gender : Male <input type="radio" name=" My Gender "> Female <input type="radio" name=" My Gender "><br>
+
+            <input id="Button" type="submit" value=" Submit Form ">
         </div>
-        <br>
-        <div>
-            Class : <input type="text">
-        </div>
-        <br>
-        <div>
-            Email : <input type="email" name=" My Email ">
-        </div>
-        <br>
-        <div>
-            Dated : <input type="date" name=" My Date ">
-        </div>
-        <br>
-        <div>
-            Check If Eligible : <input type="checkbox" name=" Eligible ">
-        </div>
-        <br>
-        <div>
-            Gender : Male <input type="radio" name=" My Gender " id=""> Female <input type="radio" name=" My Gender " id="">
-        </div>
-        <br>
-        <div>
-            Write About Yourself : <br> <textarea name=" About Me "  cols="30" rows="10"></textarea>
-        </div>
-        <br>
-        <div>
-            <label for=" car "> Car </label>
-            <select name=" Your Car " id=" car ">
-            <option value=" Toyota Corolla "> Toyota Corolla </option>
-            <option value=" Honda Civic "> Honda Civic </option>
-            <option value=" Kia Sportage "> Kia Sportage </option>
-            </select>
-        </div>
-        <br>
-        <div>
-            <input type="submit" value=" Submit Form ">
-        </div>
-        
-    </form>
-</div>
-</div>
+
+        </form>
 </body>
 </html>
