@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Entry Form </title>
+    <style>
+        .bg{
+            background-image: url(https://images.pexels.com/photos/68562/pexels-photo-68562.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=960);
+            background-position: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+            height: 100%;
+            }
+        body,html
+            {
+            height: 100%;
+            }
+        #h1
+            {
+            width: 21.5%;
+            margin: 22px;
+            margin-left: -1%;
+            padding-right: 0px;
+            padding-left: 10px;
+            padding-bottom: -11px;
+            font-family: Georgia, 'Times New Roman', Times, serif ;
+            font-size: 195%;
+            color:black;
+            border: 3px solid darkslategrey;
+            border-radius: 8px;
+            background-color: gray;
+            }
+        #h1:hover
+            {
+            cursor: pointer ;
+            }
+        a:hover
+            {
+            cursor: pointer;
+            }
+        .names
+            {
+            font-family: Georgia, 'Times New Roman', Times, serif ;
+            color: gray;
+            padding-left: 7%;
+            padding-top: 0px;
+            }
+        .boxes
+            {
+            height: 18px;
+            width: 200px;
+            color: black;
+            border: 2px solid darkslategrey;
+            border-radius: 8px;
+            background-color: lightgrey ;
+            }
+        .boxes:hover
+            {
+            background-color: white ;
+            }
+        .container
+            {
+            color: gray;
+            padding-left: 5%;
+            padding-top: 25px;
+            }
+        #Button
+            {
+            font-weight: bold;
+            width: 10%;
+            margin: 10px;
+            margin-left: 0%;
+            padding-left: 5px;
+            padding-bottom: 0px;
+            font-family: Georgia, 'Times New Roman', Times, serif ;
+            font-size: 80%;
+            border: 2px solid darkslategrey;
+            color: black;
+            background-color: gray;
+            border-radius: 6px;
+            }
+        #Button:hover
+            {
+            background-color: darkslategrey;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+    
+    <div class="container">
+    
+    <h1 id="h1"> Entry Form </h1>
+    
+    <p> Grades Greater Than 75% is Eligible </p></div>
+    
+    <form action="backend.php"> 
+        <div class= " names ">
+
+            <a>If Eligible : <input type="checkbox" ></a><br><br>
+
+            <a>First Name : </a><br><input type =" text " class=" boxes " class= " names " ><br>
+
+            <a>Last Name : </a><br><input type="text" class=" boxes " ><br>
+
+            <a>Father's Name : </a><br><input type="text" class=" boxes "><br>
+
+            <a>CNIC.No : </a><br><input type="text" class=" boxes "><br>
+
+            <a>Address : </a><br><input type="text" class=" boxes "><br>
+
+            <a>D.O.B : </a><br><input type="text" class=" boxes " ><br>
+
+            <a>Email ID : </a><br><input type="text" class=" boxes "><br>
+
+            <a>Qualification : </a><br><input type="text" class=" boxes "><br>
+
+            <a>Experience : <br><input type="text" name=" My Name " class=" boxes" ></a><br><br>
+
+            <a>Gender : Male <input type="radio" name=" My Gender "> Female <input type="radio" name=" My Gender "></a><br><br>
+
+            <a><input id="Button" type="submit" value=" Submit Form "></a></div>
+        </div>
+
+        </form>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <title> Forms And Input Tags </title>
+    <style>
+        .bg {
+            background-image: url(pexels-anete-lusina-6353833.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            margin: -8px;
+            margin-right: -8px;
+            margin-left: -10px;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        .navbar li {
+            color: white;
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+            cursor: pointer;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar {
+            background-color: black;
+            border: 1px black;
+            border-radius: 5px;
+            margin-bottom: -16px;
+            margin-top: -16px;
+
+        }
+
+        #search {
+            color: rgb(12, 11, 11);
+            margin-left: 693px;
+            border: 2px solid white;
+            border-radius: 14px;
+            margin-top: 10px;
+
+        }
+
+        .navbar li:hover {
+            color: red;
+
+        }
+
+        .container {
+            padding-left: 3%;
+            background-color: white;
+            margin-top: 4px;
+            width: 15%;
+            margin-left: 54px;
+            padding-right: 1%;
+            padding-bottom: 19px;
+            border: 1px solid white;
+            border-radius: 10px;
+            padding-top: 14px;
+        }
+
+        #h1 {
+            font-family: 'Dancing Script';
+            font-weight: bold;
+            color: rgb(255 255 255);
+            padding-bottom: -16px;
+            background-color: #f13e3e;
+            width: -9px;
+            margin-right: -17px;
+            margin-left: -42px;
+            padding-left: 40px;
+            margin-top: -15px;
+            height: 49px;
+            border: 1px solid nlack;
+            border: 1px solid #f13e3e;
+            padding-bottom: 6px;
+            margin-bottom: 4px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            width: 223px;
+        }
+
+
+        #btn {
+            border: none;
+            width: 84%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: rgb(126, 245, 126);
+        }
+
+        #btn:hover {
+            transition: 0.5s;
+            background-color: #53fd50;
+
+        }
+
+        .inputs {
+            color: black;
+            background-color: #CDCDCD;
+            border: none;
+            height: 30px;
+            width: 178px;
+            ;
+        }
+
+        .smlhead {
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li>Home</li>
+                    <li>Contact Us</li>
+                    <li>Read More</li>
+                    <li>About Us</li>
+                    <div id="class">
+                        <input type="text" name="Search" id="search" placeholder="Search">
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <br>
+
+        <div class="container">
+            <div id="h1">
+                <h1>Admission Form</h1>
+            </div>
+            <form action="backend.php">
+                <div>
+                    <div class="smlhead">Name</div>
+                    <input type="text" name=" My Name " class="inputs">
+                </div>
+
+                <div>
+                    <div class="smlhead">
+                    </div>
+                    <br>
+
+                    <div>
+                        <div class="smlhead"> Deptt </div>
+                        <input type="text" class="inputs">
+                    </div>
+                    <br>
+
+                    <div>
+                        <div class="smlhead"> Class </div>
+                        <input type="text" class="inputs">
+                    </div>
+                    <br>
+
+                    <div>
+                        <div class="smlhead"> Email </div>
+                        <input type="email" name=" My Email " class="inputs">
+                    </div>
+                    <br>
+
+                    <div>
+                        <div class="smlhead">Dated</div>
+                        <input type="date" name=" My Date " class="inputs">
+                    </div>
+                    <br>
+
+                    <div>
+                        <div class="smlhead"> Check If Eligible : <input type="checkbox" name=" Eligible "> </div>
+                    </div>
+                    <br>
+
+                    <div>
+                        <strong>
+                            <style></style> Gender :
+                        </strong> <span style="color: #466DFE;">Male</span> <input type="radio" name=" My Gender "
+                            id=""> <span style="color:#FF24AC;">Female</span> <input type="radio" name=" My Gender "
+                            id="">
+                    </div>
+                    <br>
+
+                    <div>
+                        <input id="btn" type="submit" value=" Submit Form ">
+                    </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
